@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">sayPresent!</string>
+    <string name="action_settings">Data</string>
+    <string name="action_help">Help</string>
+    <string name="home_message">sayPresent! \n Mobile Application Attendance Checker</string>
+    <string name="help_message">sayPresent! is a mobile application attendance checker developed in android that help teachers log daily attendance to their students. \n\n
+        Once the application has started, you can immediately input your subjects and students.\n\n
+        Click on the circular plus button in the bottom right corner of your screen to add a subject.\n\n
+    </string>
+    <string name="warning_text">
+        Warning: This will erase all of your data. You cannot recover data once this is executed.
+    </string>
+
+    <string name="home_instruction">
+        Welcome to sayPresent!, your personal class attendance checker\n\n
+        To get started, just follow these simple steps below\n\n
+        1. Tap the Attendance tab below to show the list of subjects you\'re currently teaching\n\n
+        2. Since you\'re just getting started, it is expected that the list is empty.\n\n
+        3. Tap on the circular plus button to add a class.\n\n
+        4. Once the class is added, tap on the class\' name to check the available students.\n\n
+        5. You will see another circular plus button to add students.\n\n
+        6. Once finished, you can return back and log the students\' attendance.\n\n
+        7. To log their attendance, look for the Schedule tab that contains the calendar.\n\n
+        8. Select the date to show the classes available in that day.\n\n
+        9. Tap the class and you can log their attendance and click submit to finish.\n\n
+        10. You\'re done! To check the student\'s record, just go to Attendance >> Name of Class >> Name of Student.\n\n
+
+        For more info, just go to the Help section.
+    </string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/schedule_date"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saturday, January 12"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+
+    <ListView
+        android:layout_below="@+id/schedule_date"
+        android:id="@+id/schedule_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+    <TextView
+        android:id="@+id/empty_sched_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schedule_date"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:text="No Available Class" />
+
+</RelativeLayout>

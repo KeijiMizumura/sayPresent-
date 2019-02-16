@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAttendance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Section"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/section_field"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Section"
+                    android:background="@drawable/field_style"
+                    android:padding="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/subject_field"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject"
+                    android:background="@drawable/field_style"
+                    android:padding="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/MyHintText">
+
+                    <EditText
+                        android:id="@+id/from_time"
+                        android:theme="@style/MyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="From"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:background="@drawable/field_style"
+                        android:padding="10dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/MyHintText">
+
+                    <EditText
+                        android:id="@+id/until_time"
+                        android:theme="@style/MyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Until"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:background="@drawable/field_style"
+                        android:padding="10dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/toggle_sunday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="S"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_monday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="M"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_tuesday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="T"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_wednesday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="W"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_thursday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="T"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_friday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="F"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+                    <Button
+                        android:id="@+id/toggle_saturday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="S"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundedbutton"/>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+            <Button
+                android:id="@+id/submit_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg"
+    tools:context=".PopActivity">
+
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to sayPresent!"/>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_below="@+id/popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_instruction"/>
+
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/preference"
+        android:layout_above="@+id/popup_button"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:checked="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Never show again"/>
+
+    <Button
+        android:id="@+id/popup_button"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
